@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+}
+#waterMark{
+    z-index: 9999;
+    position: fixed;
+    top: -15px;
+    left: 20px;
+}
+#waterMark h1 a{
+    opacity: 0.8;
+    text-decoration: none;
+    color: white;
+}
+#waterMark:hover{
+    transform: scale(110%);
+    cursor: pointer;
+}
+header{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('img/programming.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+header h1{
+    display: inline;
+    position: absolute;
+    font-size: 50px;
+}
+header h2{
+    display: inline;
+    position: absolute;
+    opacity: 0.7;
+    top: 55vh;
+}
+#hiddenHeader{
+    display: flex;
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    height: 60px; 
+    width: 100%; 
+    background-color: #D3D3D3;
+    opacity: 0.7;
+    justify-content: center;
+    align-items: center;   
+    visibility: hidden; 
+}
+#hiddenHeader h1{
+    font-size: 20px;
+}
+section{
+    box-shadow: 0px 0px 30px gray;
+    border-radius: 0 30px 30px 0;
+}
+.content{
+    display: flex;
+}
+.content nav{
+    opacity: 0.7;
+    overflow: auto;
+    height: 87.125vh;
+    flex-shrink: 0;
+    background-color: #b0d390;
+    border-radius: 0 30px 30px 0;
+    position: sticky;
+    box-shadow: 0px 30px 30px gray;
+}
+.content nav div{
+    margin: 20px;
+}
+.content nav span{
+    font-size: 35px;
+    font-weight: 900;
+    margin-left: 15px;
+}
+.content nav span:hover{
+    color:rgb(240, 100, 100);
+}
+.content nav ul{
+    margin-top: 20px;
+}
+.content nav li{
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+.content nav li a{
+    color: black;
+    text-decoration: none;
+}
+.content nav li a:hover{
+    color: rgb(240, 100, 100);
+}
+.content main{
+    margin: 50px;
+    text-align: left;
+}
+.content main h1{
+    display: inline;
+    font-size: 50px;
+    background-color: rgb(255, 255, 120);
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px lightgray;
+}
+.content main p{
+    font-size: 25px;
+}
+footer{
+    display: flex;
+    position: fixed; 
+    left: 0; 
+    bottom: 0; 
+    height: 60px; 
+    width: 100%; 
+    background-color: #D3D3D3;
+    opacity: 0.7;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    box-shadow: 0px 0px 30px gray;;
+}
+.hidden {
+    display:none
+}
+.active {
+    display:block
+}
+*:not(input):not(textarea):not(code):not(blockquote):not(pre) { 
+    user-select: none !important;
+    -webkit-user-select: none !important;
+    -webkit-touch-callout: none !important;
+}
+body::-webkit-scrollbar {
+    width: 8px;  /* 스크롤바의 너비 */
+}
+body::-webkit-scrollbar-thumb {
+    height: 30%; /* 스크롤바의 길이 */
+    background:rgb(160, 200, 100); /* 스크롤바의 색상 */
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
+}
